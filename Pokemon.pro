@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pokemon.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    pokemon.h
 
 FORMS += \
     mainwindow.ui
