@@ -103,7 +103,7 @@ Charmander::Charmander(){
         level=INIT_LEVEL;
         exp=0;
         atk=7;
-        def=3;
+        def=2;
         hp=10;
         interval=1;
 }
@@ -114,7 +114,7 @@ Charmander::Charmander(string n_name){
         level=INIT_LEVEL;
         exp=0;
         atk=7;
-        def=3;
+        def=2;
         hp=10;
         interval=1;
 }
@@ -154,5 +154,185 @@ int Geodude::attack(){
 }
 
 /*----------Geodude类----------*/
+
+
+Bulbasaur::Bulbasaur(){
+    type=SHD;
+    status=ALIVE;
+    name="妙蛙种子";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=2;
+    hp=15;
+    interval=1;
+}
+Bulbasaur::Bulbasaur(string n_name){
+    type=SHD;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=2;
+    hp=15;
+    interval=1;
+}
+int Bulbasaur::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了藤鞭！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+/*----------Bulbasaur类----------*/
+
+
+Squirtle::Squirtle(){
+    type=SHD;
+    status=ALIVE;
+    name="杰尼龟";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=1;
+    hp=18;
+    interval=1;
+}
+Squirtle::Squirtle(string n_name){
+    type=SHD;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=1;
+    hp=18;
+    interval=1;
+}
+int Squirtle::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了水枪！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+/*----------Squirtle类----------*/
+
+
+Metapod::Metapod(){
+    type=DEF;
+    status=ALIVE;
+    name="铁甲蛹";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=3;
+    hp=12;
+    interval=1;
+}
+Metapod::Metapod(string n_name){
+    type=DEF;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=3;
+    hp=12;
+    interval=1;
+}
+int Metapod::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了撞击！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+/*----------Metapod类----------*/
+
+
+Shellder::Shellder(){
+    type=DEF;
+    status=ALIVE;
+    name="大舌贝";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=4;
+    hp=10;
+    interval=1;
+}
+Shellder::Shellder(string n_name){
+    type=DEF;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=4;
+    hp=10;
+    interval=1;
+}
+int Shellder::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了贝壳刃！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+/*----------Shellder类----------*/
+
+
+Pikachu::Pikachu(){
+    type=SPD;
+    status=ALIVE;
+    name="皮卡丘";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=6;
+    def=2;
+    hp=10;
+    interval=0.9;
+}
+Pikachu::Pikachu(string n_name){
+    type=SPD;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=6;
+    def=2;
+    hp=10;
+    interval=0.9;
+}
+int Pikachu::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了电光一闪！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+/*----------Pikachu类----------*/
+
+
+Meowth::Meowth(){
+    type=SPD;
+    status=ALIVE;
+    name="喵喵";
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=2;
+    hp=10;
+    interval=0.8;
+}
+Meowth::Meowth(string n_name){
+    type=SPD;
+    status=ALIVE;
+    name=n_name;
+    level=INIT_LEVEL;
+    exp=0;
+    atk=5;
+    def=2;
+    hp=10;
+    interval=0.8;
+}
+int Meowth::attack(){
+    qDebug()<<QString::fromStdString(name)<<"使用了疯狂乱抓！造成了"<<atk<<"点伤害！";
+    return atk;
+}
+
+
 
 

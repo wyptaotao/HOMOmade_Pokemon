@@ -4,9 +4,9 @@
 #include<string>
 using namespace std;
 
-const int MAX_LEVEL=15;//等级最大值为15
-const int INIT_LEVEL=1;//初始等级为1
-const int MAX_EXP=100;//每一百点经验值升级一次
+extern const int MAX_LEVEL;//等级最大值为15
+extern const int INIT_LEVEL;//初始等级为1
+extern const int MAX_EXP;//每一百点经验值升级一次
 
 enum TYPE{
     STR=1,//力量型，为1
@@ -63,5 +63,45 @@ class Bulbasaur:public pokemon{
     Bulbasaur(string n_name);
     int attack() override;
 };//妙蛙种子
+
+class Squirtle:public pokemon{
+    Squirtle();
+    Squirtle(string n_name);
+    int attack() override;
+};//杰尼龟
+
+/*----------肉盾型宝可梦----------*/
+
+
+class Metapod:public pokemon{
+    Metapod();
+    Metapod(string n_name);
+    int attack() override;
+};//铁甲蛹
+
+class Shellder:public pokemon{
+    Shellder();
+    Shellder(string n_name);
+    int attack() override;
+};//大舌贝
+
+/*----------防御型宝可梦----------*/
+
+
+class Pikachu:public pokemon{
+    Pikachu();
+    Pikachu(string n_name);
+    int attack() override;
+};//皮卡丘
+
+class Meowth:public pokemon{
+    Meowth();
+    Meowth(string n_name);
+    int attack() override;
+};//喵喵
+
+/*----------敏捷型宝可梦----------*/
+
+
 
 #endif // POKEMON_H
