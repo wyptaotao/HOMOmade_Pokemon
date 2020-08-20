@@ -4,9 +4,7 @@
 #include<string>
 using namespace std;
 
-extern const int MAX_LEVEL;//等级最大值为15
-extern const int INIT_LEVEL;//初始等级为1
-extern const int MAX_EXP;//每一百点经验值升级一次
+
 
 enum TYPE{
     STR=1,//力量型，为1
@@ -22,7 +20,7 @@ enum STATUS{
 };//精灵状态
 
 class pokemon{
-protected:
+public:
     TYPE type;//精灵属性
     STATUS status;//精灵状态
     string name;//精灵名称
@@ -32,7 +30,7 @@ protected:
     int def;//精灵防御力
     int hp;//精灵生命值
     double interval;//精灵攻击间隔
-public:
+
     pokemon();
     pokemon(string n_name);
     void level_up();

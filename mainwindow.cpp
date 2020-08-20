@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    srand(time(NULL));
 //    pokemon a("test君");
 //    a.attack();
 //    a.gain_exp(101);

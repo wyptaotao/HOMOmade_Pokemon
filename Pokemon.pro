@@ -24,6 +24,7 @@ SOURCES += \
 
 HEADERS += \
     battle.h \
+    global.h \
     mainwindow.h \
     net.h \
     pokemon.h

@@ -2,7 +2,7 @@
 #include<QDebug>
 #include<time.h>
 #include"pokemon.h"
-
+#include"global.h"
 
 pokemon::pokemon(){};
 pokemon::pokemon(string n_name){
@@ -57,8 +57,8 @@ void pokemon::death(){
     qDebug()<<QString::fromStdString(name)<<"死了！";
 }//死亡
 void pokemon::take_damage(int damage){
-    srand(time(NULL));
     int doc=rand()%100+1;//dodge or critical，生成一个1-100之间的随机数
+    qDebug()<<"看看摇点："<<doc;
     if(doc<=10)/*10%的几率闪避*/{
         qDebug()<<QString::fromStdString(name)<<"闪避了这次攻击，没有受伤！";
         return;//结束受伤函数

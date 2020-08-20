@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "pokemon.h"
+#include"global.h"
 #include <QApplication>
 
 const int MAX_LEVEL=15;//等级最大值为15
