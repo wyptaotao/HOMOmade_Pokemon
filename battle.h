@@ -10,9 +10,9 @@ enum battle_status{
     END//战斗结束
 };
 enum battle_options{
-    ATTACK=1,
-    DEFEND,
-
+    ATTACK=1,//攻击
+    HEAL,//回血
+    RUN//逃跑
 };
 
 class battle{

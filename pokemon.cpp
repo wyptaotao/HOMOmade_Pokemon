@@ -79,14 +79,13 @@ void pokemon::take_damage(int damage){
     }//受伤掉血
 }//受伤
 void pokemon::gain_exp(int expp){
-    exp+=expp;
     qDebug()<<QString::fromStdString(name)<<"获得了"<<expp<<"点经验值！";
-    if(level==15){
-        exp=0;
-    }//如满级则不再升级
-    else{
-        level_up();
-    }//未满级则升级
+    if(level==MAX_LEVEL){
+        qDebug()<<"但是因为"<<QString::fromStdString(name)<<"已经满级，故没有获得经验值！";
+        return;
+    }//如满级则不再获得经验
+    exp+=expp;
+    level_up();
 }//获得经验
 int pokemon::attack(){
     qDebug()<<QString::fromStdString(name)<<"使用了普通攻击！造成了"<<atk<<"点伤害！";
