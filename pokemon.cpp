@@ -87,6 +87,10 @@ void pokemon::gain_exp(int expp){
     exp+=expp;
     level_up();
 }//获得经验
+void pokemon::heal(int hpp){
+    qDebug()<<QString::fromStdString(name)<<"恢复了"<<hpp<<"点生命值！";
+    hp+=hpp;
+}
 int pokemon::attack(){
     qDebug()<<QString::fromStdString(name)<<"使用了普通攻击！造成了"<<atk<<"点伤害！";
     return atk;

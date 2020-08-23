@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     battle.cpp \
+    game.cpp \
     main.cpp \
     mainwindow.cpp \
     net.cpp \
@@ -24,12 +25,14 @@ SOURCES += \
 
 HEADERS += \
     battle.h \
+    game.h \
     global.h \
     mainwindow.h \
     net.h \
     pokemon.h
 
 FORMS += \
+    game.ui \
     mainwindow.ui
 
 # Default rules for deployment.

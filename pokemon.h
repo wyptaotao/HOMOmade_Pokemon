@@ -37,6 +37,7 @@ public:
     void death();
     void take_damage(int damage);
     void gain_exp(int expp);
+    void heal(int hpp);
     virtual int attack();
 };
 
