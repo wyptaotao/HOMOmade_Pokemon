@@ -119,6 +119,12 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Bauhaus 93</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="t_password">
     <property name="geometry">
@@ -128,6 +134,12 @@
       <width>341</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bauhaus 93</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
    </widget>
    <zorder>background</zorder>
