@@ -5,7 +5,9 @@
 #include "pokemon.h"
 #include "net.h"
 using namespace std;
-
+void atk(pokemon* a){
+    a->attack();
+}
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -16,7 +18,9 @@ MainWindow::MainWindow(QWidget *parent)
 //    a.attack();
 //    a.gain_exp(101);
 //    a.take_damage(1919810);
+    Squirtle e;
     Charmander b;
+    atk(&b);
     Charmander c("test君二号机");
     b.attack();
     c.attack();

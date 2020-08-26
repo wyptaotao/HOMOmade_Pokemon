@@ -49,6 +49,7 @@ public:
 };//小火龙
 
 class Geodude:public pokemon{
+public:
     Geodude();
     Geodude(string n_name);
     int attack() override;
@@ -58,12 +59,14 @@ class Geodude:public pokemon{
 
 
 class Bulbasaur:public pokemon{
+public:
     Bulbasaur();
     Bulbasaur(string n_name);
     int attack() override;
 };//妙蛙种子
 
 class Squirtle:public pokemon{
+public:
     Squirtle();
     Squirtle(string n_name);
     int attack() override;
@@ -73,12 +76,14 @@ class Squirtle:public pokemon{
 
 
 class Metapod:public pokemon{
+public:
     Metapod();
     Metapod(string n_name);
     int attack() override;
 };//铁甲蛹
 
 class Shellder:public pokemon{
+public:
     Shellder();
     Shellder(string n_name);
     int attack() override;
@@ -88,12 +93,14 @@ class Shellder:public pokemon{
 
 
 class Pikachu:public pokemon{
+public:
     Pikachu();
     Pikachu(string n_name);
     int attack() override;
 };//皮卡丘
 
 class Meowth:public pokemon{
+public:
     Meowth();
     Meowth(string n_name);
     int attack() override;

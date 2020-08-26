@@ -39,6 +39,12 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="text">
      <string>注册</string>
     </property>
@@ -46,11 +52,17 @@
    <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>620</x>
       <y>550</y>
       <width>141</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>登录</string>
